@@ -75,7 +75,7 @@ func main() {
 					if err != nil {
 						fmt.Fprintln(os.Stderr, err.Error())
 					}
-					fmt.Printf("# %s\nenvironment=\"REMOTEUSER=%s\" ", *userName, *userName)
+					fmt.Printf("# %s\nENVIRONMENT=\"REMOTEUSER=%s\" ", *userName, *userName)
 					fmt.Println(*resp.SSHPublicKey.SSHPublicKeyBody)
 				}
 			} else {
